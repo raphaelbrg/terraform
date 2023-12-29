@@ -17,12 +17,23 @@ Ce projet contient des fichiers de configuration Terraform pour créer un ensemb
 
 ## Utilisation
 
-1. Cloner le dépôt : git clone https://github.com/raphaelbrg/terraform/new.git
+1. Cloner le dépôt : git clone https://github.com/raphaelbrg/terraform.git
 
-2. Modifier les variables d'accès AWS dans le fichier `variables.tf`.
+2. Modifier les variables d'accès AWS dans le fichier `terraform.tfvars`.
 
 3. Initialiser Terraform : terraform init
 
 4. Vérifier les changements que Terraform va appliquer : terraform plan
 
 5. Appliquer les changements : terraform apply
+
+6. Pour terminer et détruire l'instance : terraform detroy
+
+## Avertissement
+
+- Assurez-vous de comprendre les coûts associés à ces ressources AWS avant de les déployer.
+- Les clés d'accès AWS (access_key et secret_key) ne doivent pas être stockées dans le code public. Utilisez des variables d'environnement ou des mécanismes sécurisés pour les fournir.
+
+## Auteurs
+
+- Raphaël - Développeur principal
