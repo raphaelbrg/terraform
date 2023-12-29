@@ -1,4 +1,4 @@
-# Definition du provider AWXS avec la region et les cles d'acces
+# Definition du provider AWS avec la region et les cles d'acces
 provider "aws" {
  region = var.region
  access_key = var.access_key
