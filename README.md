@@ -8,7 +8,8 @@ Ce projet contient des fichiers de configuration Terraform pour créer un ensemb
 
 - main.tf : Contient la définition des ressources AWS telles que le bucket S3, les groupes de sécurité, etc.
 - variables.tf : Définit les variables utilisées dans le code Terraform.
-
+- terraform.tfvars : Contient les clés d'accès.
+  
 ### Prérequis
 
 - Terraform doit être installé localement.
