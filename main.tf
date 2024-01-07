@@ -88,8 +88,8 @@ terraform {
 
  #Configuration du backend S3 pour stocker l'etat de terraform
  backend "s3" {
-    bucket = var.bucket_name
-    key    = var.key_name
-    region = var.region
+    bucket = "monbuckets3"
+    key    = "tfstate/monbuckets3.tfstate"
+    region = "eu-west-3"
  }
 }
