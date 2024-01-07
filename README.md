@@ -43,6 +43,24 @@ ingress {
     ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
 }
 ```
+## Problèmes rencontrés 
+
+- Lors des premiers tests j'ai eu une erreur au niveau des credentials que j'avais mal renseigné :
+```
+Initializing the backend...
+│ Error: No valid credential sources found
+│
+│ Please see
+│ https://www.terraform.io/docs/language/settings/backends/s3.html
+│ for more information about providing credentials.
+│
+│ Error: failed to refresh cached credentials, no EC2 IMDS role
+│ found, operation error ec2imds: GetMetadata, request canceled,
+│ context deadline exceeded
+```
+Il a donc fallu les remplacer correctmeent et tout a fonctionné par la suite.
+
+ - J'ai aussi eu un souci de conflits car je n'avais pas destroy la précédente instance.
 
 ## Auteurs
 
