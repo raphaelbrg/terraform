@@ -34,7 +34,7 @@ Ce projet contient des fichiers de configuration Terraform pour créer un ensemb
 - Assurez-vous de comprendre les coûts associés à ces ressources AWS avant de les déployer.
 - Les clés d'accès AWS (access_key et secret_key) ne doivent pas être stockées dans le code public. Utilisez des variables d'environnement ou des mécanismes sécurisés pour les fournir.
 - L'instance est actuellement ouverte sur tous les ports entrants, vous pouvez réduire les accès comme ceci :
--```
+```
 -  ingress {
     from_port   = 0
     to_port     = 65535
