@@ -35,13 +35,13 @@ Ce projet contient des fichiers de configuration Terraform pour créer un ensemb
 - Les clés d'accès AWS (access_key et secret_key) ne doivent pas être stockées dans le code public. Utilisez des variables d'environnement ou des mécanismes sécurisés pour les fournir.
 - L'instance est actuellement ouverte sur tous les ports entrants, vous pouvez réduire les accès comme ceci :
 ```
--  ingress {
+ingress {
     from_port   = 0
     to_port     = 65535
     protocol    = "tcp"
     cidr_blocks      = [aws_vpc.main.cidr_block]
     ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
- }
+}
 ```
 
 ## Auteurs
